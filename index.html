@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Currency Conventer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DynaPuff:wght@500&family=Monoton&family=Playfair+Display&family=Shrikhand&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title"><h1>currency conventer</h1></div>
+      <form action="">
+        <label for="value-inserted">
+          <p>number to insert:</p>
+          <input
+            type="text"
+            id="value-inserted"
+            required
+            placeholder="insert number"
+            class="num-ins"
+          />
+        </label>
+
+        <label for="from">
+          <p>from:</p>
+          <select name="" id="from" class="currOne">
+            <option disabled selected hidden>First Currency</option>
+            <option value="US Dollar">US Dollar</option>
+            <option value="Great Britain Pound">Great Britain Pound</option>
+            <option value="Canadian Dollar">Canadian Dollar</option>
+            <option value="Australian Dollar">Australian Dollar</option>
+            <option value="Euro">Euro</option>
+            <option value="Russian ruble">Russian ruble</option>
+            <option value="Turkish lira">Turkish lira</option>
+            <option value="United Arab Emirates dirham">
+              United Arab Emirates dirham
+            </option>
+            <option value="Saudi riyal">Saudi riyal</option>
+            <option value="Egyptian pound">Egyptian pound</option>
+            <option value="Kuwaiti dinar">Kuwaiti dinar</option>
+          </select>
+        </label>
+
+        <label for="to">
+          <p>to:</p>
+          <select name="" id="to" class="currTwo">
+            <option disabled selected hidden>Second Currency</option>
+            <option value="Great Britain Pound">Great Britain Pound</option>
+            <option value="US Dollar">US Dollar</option>
+            <option value="Canadian Dollar">Canadian Dollar</option>
+            <option value="Australian Dollar">Australian Dollar</option>
+            <option value="Euro">Euro</option>
+            <option value="Russian ruble">Russian ruble</option>
+            <option value="Turkish lira">Turkish lira</option>
+            <option value="United Arab Emirates dirham">
+              United Arab Emirates dirham
+            </option>
+            <option value="Saudi riyal">Saudi riyal</option>
+            <option value="Egyptian pound">Egyptian pound</option>
+            <option value="Kuwaiti dinar">Kuwaiti dinar</option>
+          </select>
+        </label>
+      </form>
+
+      <div class="calculate"><button class="btn">calculate</button></div>
+
+      <div class="result">
+        <span class="number">5</span> <span class="fir-curr">usd</span> =
+        <span class="res">10</span> <span class="sec-curr">egp</span>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script>
+      ScrollReveal({
+        reset: true,
+        delay: 400,
+        duration: 2500,
+        distance: `60px`,
+      });
+      ScrollReveal().reveal(".title", { delay: 500, origin: "bottom" });
+    </script>
+  </body>
+</html>
